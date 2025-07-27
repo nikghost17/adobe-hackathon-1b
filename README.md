@@ -6,16 +6,18 @@ This project processes a folder of PDFs, extracts relevant sections using headin
 
 ---
 
+```markdown
 ## 📁 Folder Structure
 
+```text
 .
 ├── Input
-│ ├── input.json # Configuration file
-│ └── pdfs/ # Folder containing all PDF files to be processed
+│   ├── input.json              // Configuration file
+│   └── pdfs/                   // Folder containing PDFs
 ├── Output
-│ └── output_{persona}.json # Output file will be generated here which is dynamically saved with the persona taken as the input
-├── main.py # Main processing script
-└── README.md # You're reading this!
+│   └── output_{persona}.json  // Output file (dynamic name based on persona)
+├── main.py                    // Main processing script
+└── README.md                  // You're reading this!
 
 ---
 
@@ -25,10 +27,10 @@ The `Input/input.json` file controls how the processing runs. Here's a sample:
 
 ```json
 {
-    "pdf_folder": "Input/pdfs", # This is the folder where all the pdfs to be processed are stored
-    "persona": "Travel Planner", # The necessary persona needs to be given as an input here
-    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.", # The necessary job_to_be_done needs to be given as an input here
-    "output_file": "Output/output_{persona}.json" # File path where the output is saved, the file path contains the persona which was given before
+    "pdf_folder": "Input/pdfs", // This is the folder where all the pdfs to be processed are stored
+    "persona": "Travel Planner", // The necessary persona needs to be given as an input here
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.", // The necessary job_to_be_done needs to be given as an input here
+    "output_file": "Output/output_{persona}.json" // File path where the output is saved, the file path contains the persona which was given before
 }
 Fields:
 pdf_folder: Relative path to the folder containing the PDFs.
