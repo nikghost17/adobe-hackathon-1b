@@ -176,12 +176,12 @@ Persona is sanitized to be filename-safe (spaces, special chars replaced with _)
 
 ## 🐳 Run Using Docker
   ### 🛠️ 1. Build Docker Image
-  - Open Command Prompt inside the project folder and run:
-     - **docker build -t 1b_adobe .**
+  - Open Command Prompt inside the project folder and run **(taking 1b_adobe as the image name)**:
+     - **docker build -t 1b_adobe .** 
   
   ### 🚀 2. Run the Container
   - Ensure your Input/ and Output/ folders exist and are populated.
-  - **Then run the container:** 
+  - **Then run the container: (taking 1b_adobe as the image name)**
     ```text
     docker run --rm ^
       -v "%cd%/Input:/app/Input" ^
