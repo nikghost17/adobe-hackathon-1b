@@ -16,8 +16,9 @@ This project processes a folder of PDFs, extracts relevant sections using headin
 ├── Output
 │   └── output_{persona}.json  // Output file (dynamic name based on persona)
 ├── main.py                    // Main processing script
-└── README.md                  // You're reading this!
 └── DockerFile                 // Defines container environment for consistent execution and deployment
+└── README.md                  // You're reading this!
+└── Requirements.txt           // Defines the necessary requirements needed to run the project
 ````
 ---
 
