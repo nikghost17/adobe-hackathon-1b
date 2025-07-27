@@ -44,7 +44,7 @@ The `Input/input.json` file controls how the processing runs. Here's a sample:
 - **output_file:** Template for naming the output file. {persona} will be replaced with a sanitized, lowercase version of the persona.
 
 ## ▶️ Running the Script
-- Install all the necessary requirements from the requirements.txt using **pip install**
+- Install all the necessary requirements from the requirements.txt using **pip install** command.
 - **To run the processor:**
   - python main.py
 - **This will:**
