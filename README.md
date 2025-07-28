@@ -11,8 +11,8 @@ This project processes a folder of PDFs, extracts relevant sections using headin
 ```text
 .
 ├── Input
-│   ├── input.json              // Configuration file
-│   └── pdfs/                   // Folder containing PDFs
+│   ├── input.json              // Configuration file (Contains the persona and job_to_be_done)
+│   └── pdfs/                   // Folder containing PDFs (Store the pdfs here)
 ├── Output
 │   └── output_{persona}.json  // Output file (dynamic name based on persona)
 ├── main.py                    // Main processing script
